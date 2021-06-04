@@ -4,8 +4,8 @@ import math
 from numpy import genfromtxt
 from itertools import combinations
 from math import hypot
-#currently, the user has to pre-format their xy data output as a 2-column csv.
-raw_data = genfromtxt('/home/eo/Desktop/xy.csv', delimiter=',')
+#currently, the user has to pre-format their xy data output as a 2-column csv. Working on computer vision feature to auto-determine this from an image file.
+raw_data = genfromtxt('file.csv', delimiter=',')
 #convert from csv into a python-readable data array. Print it out to confirm.
 coords = np.array(raw_data)
 print (coords)
